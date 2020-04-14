@@ -1,9 +1,6 @@
 const personal = (data) => {
   let calulating;
-  if(data.periodType === 'days') {
-    calulating = 2 ** ((data.timeToElapse) / 3);
-  }
-  return calculating;
+  if (data.periodType === 'days') return (calulating = 2 ** ((data.timeToElapse) / 3));
 };
 const covid19ImpactEstimator = (data) => {
   const input = data;
