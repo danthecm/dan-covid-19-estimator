@@ -1,4 +1,4 @@
-const personal = (data) => {
+const personal = function (data) {
   let calulating;
   if (data.periodType === 'days') return (calulating = 2 ** ((data.timeToElapse) / 3));
 };
