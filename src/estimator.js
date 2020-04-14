@@ -1,12 +1,9 @@
 const covid19ImpactEstimator = (data) => {
   const input = data;
   const calulating = () => {
-    if (input.periodType === 'days')
-      return (2 ** (input.timeToElapse / 3));
-    if (input.periodType === 'weeks')
-      return (2 ** ((input.timeToElapse / 7) / 3));
-    if (input.periodType === 'months')
-      return (2 ** ((input.timeToElapse / 30) / 3));
+    if (input.periodType === 'days') return (2 ** (input.timeToElapse / 3));
+    if (input.periodType === 'weeks') return (2 ** ((input.timeToElapse / 7) / 3));
+    if (input.periodType === 'months') return (2 ** ((input.timeToElapse / 30) / 3));
   };
   return {
     data: input,
