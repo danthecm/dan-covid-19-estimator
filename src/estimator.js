@@ -1,8 +1,9 @@
 const personal = (data) => {
   let calulating;
-  if(data.periodType === "days") {
+  if(data.periodType === 'days') {
     calulating = 2 ** ((data.timeToElapse) / 3);
   }
+  return calculating;
 };
 const covid19ImpactEstimator = (data) => {
   const input = data;
@@ -10,7 +11,7 @@ const covid19ImpactEstimator = (data) => {
     data: input,
     impact: {
       currentlyInfected: data.reportedCases * 10,
-      infectionsByRequestedTime: Math.trunc((data.reportedCases) * (10) * 512)
+      infectionsByRequestedTime: Math.trunc((data.reportedCases) * (10) * personal())
     },
     severeImpact: {
       currentlyInfected: data.reportedCases * 50,
